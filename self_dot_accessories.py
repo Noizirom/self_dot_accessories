@@ -1418,10 +1418,9 @@ def get_filename(filePath, File):
     FP = os.path.join(filePath, File)
     return FP
 
-def get_hair_dir():##########################
+def get_hair_dir():
     a_dir = bpy.utils.user_resource('SCRIPTS', "addons")
-    h_dir = os.path.join(a_dir, "self_dot_accessories")
-    return os.path.join(h_dir, "Hair_Data")
+    return os.path.join(a_dir, "self_dot_accessories")
 
 def get_hair_npz(fileName):
     hair_dir = get_hair_dir()
