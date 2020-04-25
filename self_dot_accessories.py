@@ -1419,8 +1419,10 @@ def get_filename(filePath, File):
     return FP
 
 def get_hair_dir():
+    ga = get_addons()
+    addon = [i for i in ga if 'self_dot_accessories' in i][0]
     a_dir = bpy.utils.user_resource('SCRIPTS', "addons")
-    return os.path.join(a_dir, "self_dot_accessories")
+    return os.path.join(a_dir, addon)
 
 def get_hair_npz(fileName):
     hair_dir = get_hair_dir()
